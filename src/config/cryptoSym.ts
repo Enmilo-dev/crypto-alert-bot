@@ -36,5 +36,5 @@ export const fetchValidCryptoSymbols = async () => {
     }
   }
 
-  throw new Error(`Failed to fetch crypto symbols after ${MAX_FETCH_RETRIES} attempts`);
+  logger.warn(`Failed to fetch crypto symbols after ${MAX_FETCH_RETRIES} attempts. App will continue without preloaded symbols.`);
 };
