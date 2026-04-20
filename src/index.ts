@@ -84,7 +84,7 @@ async function main(): Promise<void> {
     await alertService.start();
 
     logger.info("Starting price stream service...");
-    await priceService.start();
+    priceService.start().catch((error) => { logger.warn("Background price service startup failed", { error }); });
 
     logger.info("Running startup health verification...");
     await verifyServicesHealth();
