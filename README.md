@@ -1,4 +1,4 @@
-# CryptoAlertBot
+# Kairos Quantum
 
 A production-grade Telegram bot for real-time cryptocurrency price alerts. Monitors every trading pair on Binance simultaneously via a single persistent WebSocket connection and delivers sub-second notifications through an event-driven Redis pipeline.
 
